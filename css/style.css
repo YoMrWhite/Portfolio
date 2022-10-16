@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap");
 
 * {
     margin: 0;
@@ -7,9 +7,9 @@
 }
 
 :root {
-    --color-primary: #e40404;
+    --color-primary: #1da1f2;
     --color-secondary: #aaa5ff;
-    --color-accent: #1da1f2;
+    --color-accent: #e40404;
     --color-body: #f4f4f4;
     --color-light: #fff;
     --color-dark: #050505;
@@ -31,4 +31,68 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Navbar */
+#nav {
+    background: var(--color-dark);
+    position: sticky;
+    top: 0;
+}
+
+#nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav .logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    color: var(--color-primary);
+}
+
+#nav .logo h1::before,
+#nav .logo h1::after {
+    font-size: rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#nav .logo h1::before {
+    content: "<";
+    margin-right: 1rem;
+}
+
+#nav .logo h1::after {
+    content: "/>";
+    margin-left: 1rem;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul li {
+    margin-right: 1.5rem;
+}
+
+#nav ul li a {
+    color: var(--color-light);
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    font-weight: 300;
+}
+
+#nav ul li a:hover {
+    color: var(--color-primary);
 }
