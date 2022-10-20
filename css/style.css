@@ -43,10 +43,21 @@ a {
 .l-heading {
     font-size: 5rem;
     margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
-.gif {
-    padding: 2rem;
+.m-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.s-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
 }
 
 .profile {
@@ -108,12 +119,44 @@ i {
     opacity: 0.7;
 }
 
+.icon-container {
+    width: 100px;
+    background: var(--color-light);
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.icon {
+    width: 80px;
+}
+
+.card {
+    background: var(--color-light);
+    border-radius: 15px;
+    flex: 1;
+    margin-right: 4rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 1px -1px 13px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+.date {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
 /* Navbar */
 #nav {
     height: 14vh;
     position: sticky;
     top: 0;
     background: var(--color-body);
+    z-index: 1;
 }
 
 #nav .container {
@@ -184,12 +227,6 @@ i {
     text-align: justify;
 }
 
-#showcase .content .l-heading,
-#skills .content .l-heading {
-    font-weight: 400;
-    letter-spacing: 5px;
-}
-
 #showcase .content p {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -206,7 +243,7 @@ i {
 
 /* Skills */
 #skills {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 #skills .container {
@@ -236,7 +273,6 @@ i {
 #skills .skills {
     width: 100%;
     max-width: 600px;
-    padding: 0 2rem;
     margin-top: 4rem;
 }
 
@@ -281,4 +317,67 @@ i {
     to {
         width: 100%;
     }
+}
+
+/* Experiences */
+#experience {
+    margin-top: 4rem;
+}
+
+#experience .experiences {
+    display: flex;
+}
+
+#experience .experiences .card .header {
+    text-align: center;
+    position: relative;
+    height: 120px;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+#experience .experiences .card .header .m-heading {
+    font-weight: 500;
+}
+
+#experience .experiences .card .header .icon-container {
+    position: absolute;
+    top: 58%;
+    left: 38%;
+}
+
+#experience .experiences .card:nth-child(1) .header {
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+#experience .experiences .card:nth-child(2) .header {
+    background: var(--color-accent);
+    color: var(--color-light);
+}
+#experience .experiences .card:nth-child(3) .header {
+    background: var(--color-secondary);
+    color: var(--color-light);
+}
+
+#experience .experiences .card:nth-child(2) .header .icon-container {
+    padding: 2rem;
+}
+
+#experience .experiences .card:nth-child(3) .header .icon-container {
+    padding: 0.5rem;
+}
+
+#experience .experiences .card:nth-child(2) .header .icon {
+    width: 55px;
+}
+
+#experience .experiences .card:nth-child(3) .header .icon {
+    width: 90px;
+}
+
+#experience .experiences .card .body {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 }
