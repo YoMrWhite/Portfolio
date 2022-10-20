@@ -49,6 +49,12 @@ a {
     padding: 2rem;
 }
 
+.profile {
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+}
+
 .btn {
     padding: 1.5rem 3vw;
     text-transform: uppercase;
@@ -168,7 +174,7 @@ a {
 }
 
 #showcase .content {
-    padding: 2rem;
+    padding: 1.5rem;
     margin-right: 5rem;
     text-align: justify;
 }
@@ -180,7 +186,7 @@ a {
 
 #showcase .content p {
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #showcase .content .btn {
