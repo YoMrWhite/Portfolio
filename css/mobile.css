@@ -1,0 +1,155 @@
+#nav .logo {
+    font-size: 1.5rem;
+}
+
+#nav .logo h1 {
+    margin-top: 0;
+}
+
+#nav ul li a {
+    font-size: 1.8rem;
+}
+
+.gif {
+    display: none;
+}
+
+#showcase .content {
+    text-align: center;
+}
+
+#skills .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills .container .content {
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
+}
+
+#skills .icons {
+    flex-wrap: wrap;
+}
+
+#skills .icons li:nth-child(7) {
+    display: none;
+}
+
+#experience {
+    text-align: center;
+}
+
+.card {
+    margin-right: 1.5rem;
+    flex: 1;
+}
+
+.l-heading {
+    font-size: 4rem;
+}
+
+.m-heading {
+    font-size: 2.2rem;
+}
+
+.s-heading {
+    font-size: 2.5rem;
+}
+
+#experience .experiences .card .header .icon-container {
+    top: 58%;
+    left: 28%;
+}
+
+#contact .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+}
+
+#contact .contact-icons {
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    #nav .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    #nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #nav ul li {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #showcase .content {
+        margin-right: 0;
+    }
+
+    #skills .skills {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.8rem;
+    }
+
+    #skills .icons li {
+        flex: 1;
+        margin: 1rem;
+        justify-content: space-around;
+    }
+
+    #skills .skills .skill {
+        margin: 3.5rem 0;
+    }
+
+    .experiences {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    #experience .experiences .card .header .icon-container {
+        top: 58%;
+        left: 38%;
+    }
+    #contact .contact-icons div {
+        margin: 1rem;
+        flex: 1;
+    }
+
+    .date {
+        font-size: 2.2rem;
+    }
+
+    .m-heading {
+        font-size: 3rem;
+    }
+}

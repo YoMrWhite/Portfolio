@@ -37,7 +37,7 @@ a {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .l-heading {
@@ -152,10 +152,9 @@ i {
 
 /* Navbar */
 #nav {
-    height: 12vh;
     position: sticky;
     top: 0;
-    background: var(--color-body);
+    background: var(--color-light);
     z-index: 1;
 }
 
@@ -163,7 +162,7 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12vh;
+    padding: 0;
 }
 
 #nav .logo {
@@ -174,8 +173,7 @@ i {
 }
 
 #nav .logo h1 {
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 1.5rem;
 }
 
 #nav .logo h1::before,
@@ -215,6 +213,24 @@ i {
     color: var(--color-primary);
 }
 
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background: var(--color-dark);
+    border-radius: 10px;
+}
+
 /* Showcase */
 #showcase .container {
     display: flex;
@@ -222,9 +238,13 @@ i {
 }
 
 #showcase .content {
-    padding: 1.5rem;
     margin-right: 5rem;
     text-align: justify;
+    flex: 1;
+}
+
+#showcase .gif {
+    flex: 1;
 }
 
 #showcase span#blinker {
@@ -262,11 +282,20 @@ i {
 
 #skills .container .content {
     margin-left: 5rem;
+    flex: 2;
+    padding-left: 2rem;
+}
+
+#skills .container .content .l-heading {
+    text-align: center;
+    margin-top: -1.2rem;
+    margin-bottom: 5rem;
 }
 
 #skills .icons {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #skills .icons li {
@@ -282,17 +311,16 @@ i {
 
 #skills .skills {
     width: 100%;
-    max-width: 600px;
-    margin-top: 4rem;
+    margin-top: 6rem;
     display: flex;
     padding: 1rem;
+    justify-content: space-between;
 }
 
 #skills .skills .skill {
     width: 160px;
     height: 160px;
     position: relative;
-    margin-right: 10rem;
     transition: transform 0.3s;
 }
 
@@ -381,6 +409,7 @@ i {
 
 #experience .experiences {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #experience .experiences .card .header {
