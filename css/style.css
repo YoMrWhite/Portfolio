@@ -274,48 +274,93 @@ i {
     width: 100%;
     max-width: 600px;
     margin-top: 4rem;
+    display: flex;
+    padding: 1rem;
 }
 
-#skills .skills .skill-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 2rem 0;
-}
-
-#skills .skills .skill-bar {
-    height: 14px;
-    background: #2828289e;
-    border-radius: 10px;
-}
-
-#skills .skills .skill-bar .skill-per {
-    height: 14px;
-    background: var(--color-secondary);
-    border-radius: 10px;
+#skills .skills .skill {
+    width: 160px;
+    height: 160px;
     position: relative;
-    animation: fillBars 2.5s 1;
+    margin-right: 10rem;
+    transition: transform 0.5s;
 }
 
-#skills .skills .skill-bar .frontend {
-    max-width: 60%;
+#skills .skills .skill:hover {
+    transform: scale(1.05);
 }
 
-#skills .skills .skill-bar .backend {
-    max-width: 70%;
+#skills .skills .skill .outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    padding: 2rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-#skills .skills .skill-bar .programming {
-    max-width: 75%;
+#skills .skills .skill .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-@keyframes fillBars {
-    from {
-        width: 0;
+#skills .skills .skill .inner #name {
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 1.6rem;
+    opacity: 0.7;
+}
+
+#skills .skills .skill circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+
+#skills .skills .skill:nth-child(1) circle {
+    animation: anim1 2s linear forwards;
+}
+
+#skills .skills .skill:nth-child(2) circle {
+    animation: anim2 2s linear forwards;
+}
+
+#skills .skills .skill:nth-child(3) circle {
+    animation: anim3 2s linear forwards;
+}
+
+#skills .skills .skill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 188.8;
     }
+}
 
-    to {
-        width: 100%;
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 141.6;
+    }
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 118;
     }
 }
 
@@ -412,6 +457,11 @@ i {
     margin-right: 2rem;
     border-radius: 100%;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#contact .contact-icons div:hover {
+    transform: scale(1.05);
 }
 
 #contact .contact-icons i {
