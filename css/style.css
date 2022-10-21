@@ -154,7 +154,7 @@ i {
 #nav {
     position: sticky;
     top: 0;
-    background: var(--color-light);
+    background: var(--color-body);
     z-index: 1;
 }
 
