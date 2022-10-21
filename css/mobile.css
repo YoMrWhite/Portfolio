@@ -33,10 +33,6 @@
     flex-wrap: wrap;
 }
 
-#skills .icons li:nth-child(7) {
-    display: none;
-}
-
 #experience {
     text-align: center;
 }
