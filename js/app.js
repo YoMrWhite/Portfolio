@@ -1,3 +1,4 @@
+// Typewriter effect
 let messageArray = ["Hi, I am Namgel Lama."];
 let textPosition = 0;
 let speed = 100;
@@ -13,3 +14,14 @@ function typewriter() {
 }
 
 window.addEventListener("load", typewriter);
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+        });
+    });
+});
