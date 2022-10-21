@@ -152,7 +152,7 @@ i {
 
 /* Navbar */
 #nav {
-    height: 14vh;
+    height: 12vh;
     position: sticky;
     top: 0;
     background: var(--color-body);
@@ -411,6 +411,7 @@ i {
     padding: 1.2rem;
     margin-right: 2rem;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 #contact .contact-icons i {
@@ -421,4 +422,13 @@ i {
 
 #contact .contact-icon {
     width: 50%;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 1.2rem;
+    opacity: 0.7;
 }
